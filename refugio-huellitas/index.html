@@ -1,81 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refugio patitas</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Huellitas</title>
+    <link rel="icon" href="img/refugio.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+
+    <link href="css/style.css" rel="stylesheet">
+   
+  <script src="https://kit.fontawesome.com/70e3604f47.js" crossorigin="anonymous"></script>
+  <title>Huellitas</title>
+ 
 </head>
+
 <body>
     <header class="header">
-        <div class="logo">
-            <a href="#"><img src="../img/refugio-white.png" class="logo" alt="Refugio patitas"></a>
+        <div class="logo-header">
+            <a href=""><img src="img/refugio-white.png" ></a>
         </div>
-        <button class="menu-abrir" id="abrir">
-            <div class="burger-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </button>
-        <nav class="navbar" id="nav">
-            <ul class="navbar-links">
-                <button class="menu-cerrar" id="cerrar">
-                    <div class="burger-menu">
-                        x
-                    </div>
-                </button>
-                <li><a href="../paginas/pagina1.html" target="_blank">Sobre nosotros</a></li> 
-                <li><a href="../paginas/adopcion.html" target="_blank">En adopcion</a></li> 
-                <li><a href="../paginas/colaborar.html" target="_blank">Colaborar</a></li>
-                <li><a href="../paginas/contacto.html" target="_blank">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="nav-menu">
+            <input type="checkbox" id="check">    
+            <label for="check" class="checkbtn">
+               <i class="menu-icon"> <img src="img/bars-solid (1).svg"></i>
 
-    <div class="slider-container">
-        <!-- image slider start -->
-        <div class="slider">
-            <div class="slides">
-                <!-- radio buttons start -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <!-- radio buttons end -->
-                <!-- slide images start -->
-                <div class="slide first">
-                    <img src="./img/pexels-edgar-daniel-hernández-cervantes-3628100.jpg">
+            </label>
+        
+        <ul>
+          <li><a href="paginas/pagina1.html" target="_blank">Sobre nosotros</a></li>
+          <li><a href="paginas/adopciones.html" target="_blank">En adopción</a></li>
+          <li><a href="paginas/voluntario.html" target="_blank">Ser voluntario</a> </li>
+          <li><a href="paginas/colaborar.html" target="_blank">Colaborar</a></li>
+          <li><a href="paginas/contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        
+        
+        </div>
+  </header> 
+
+  
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <a href="paginas/pagina1.html">
+                <img src="img/pexels-edgar-daniel-hernández-cervantes-3628100.jpg"></a>
+                <div class="contenedor_1" id="contenedor_1">
+                    <h2>Somos Huellitas</h2>
+                    <p>Este es nuestro refugio</p>
                 </div>
-                <div class="slide">
-                    <img src="./img/gatito4.jpg">
-                </div>
-                <div class="slide">
-                    <img src="./img/sobre-nosotros.jpg">
-                </div>
-                <!-- slide images end -->
-                <!-- automatic navigation start -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                <!-- automatic navigation end -->
             </div>
-            <!-- manual navigation start -->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <a href="paginas/colaborar.html">
+                <img src="img/gatito4.jpg"></a>
+                <div class="contenedor_2">
+                    <h2>Deja tu huella</h2>
+                    <p>Colabora y cambiarás una vida.</p>
+                </div>
             </div>
-            <!-- manual navigation end -->
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <a href="paginas/adopcion.html">
+                <img src="img/sobre nosotros.jpg"></a>
+                <div class="contenedor_3">
+                    <h2>Adoptar es un acto de amor</h2>
+                    <p>Te estan esperando</p>
+                   
+                </div>
+
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
         </div>
     </div>
-    <!-- image slider end -->
+    
 
 
 
-    <script src="./scripts/main.js"></script>
+
+
+    <section id="bienvenidos">
+        <h2>Bienvenidos a nuestro refugio</h2>
+        <p>Somos una organización sin fines de lucro que busca ayudar y proteger a nuestros amigos perrunos y gatunos.<br>
+            Amamos hacer este labor, y queremos promover la adopción responsable, la conciencia de esterilizar y <br> recuperar
+            a los animales en condición de maltrato y/o abandono. Para contribuir y entregarles la calidad de vida que necesiten.<p> 
+    </section>
+
+    <section id="cuadro">
+        
+        <div class="contenedor">
+           
+                <div class="contenedor_vol">
+                    <h2>Ser voluntario</h2>   
+                    <p>Dona tu tiempo.</p>    
+                    <a href="paginas/voluntario.html" target="_blank" class="boton_1">Me sumo</a>                
+                </div>
+                <div class="contenedor_texto">
+                    <h2>Donar</h2>
+                    <p>Hace la diferencia.</p>
+                    <a href="paginas/colaborar.html" target="_blank" class="boton_1">Colaborar</a>
+                </div>
+           
+        </div>
+    </section>
+
+    <section id="listado">
+        <h2>Las huellitas que buscan el camino a casa</h2>
+        <div class="contenedor">
+            <div class="huella_1">
+            <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/gato 4.jpg" alt="Eros"></a>
+            <h3>Eros</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/perro 2.jpg" alt="chispita"></a>
+            <h3>Chispita</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/gato 3.jpg" alt="bigotes"></a>
+            <h3>Bigotes</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/perro 5.jpg" alt="pelusa"></a>
+            <h3>Pelusa</h3>
+            </div>
+            <div class="huella_1">
+                <a href="../HTML/paginas/contacto.html" target="_blank"><img src="img/perro 6.jpg" alt="osita"></a>
+            <h3>Osita</h3>
+            </div>
+            <div class="huella_2">
+                <a href="paginas/adopcion.html" class="boton_2" target="_blank">Mas Huellitas</a>
+            
+            </div>
+        </div>
+    </section>
+
+
+  
+
+<!-- probando git -->
+  <footer>
+    <div class="separator"></div>
+    <div class="footer">
+      <h2>Refugio Huellitas</h2>
+      
+      <p>Av. Las Patitas 2323</p>
+      <p>Huellitas nace para dar una segunda oportunidad a los animales que han sido víctimas de maltrato y abandono. 
+        Promoviendo el amor, cuidado, respeto y protección al rescatar, recuperar, rehabilitar y entregar en adopción.</p>
+      <p>&copy; Refugio Huellitas. Todos los derechos reservados.</p>
+
+      <div class="p-footer">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"
+            style="color: #ffffff;"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"
+            style="color: #ffffff;"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"
+            style="color: #f5f5f5;"></i></a>
+      </div>
+    </div>
+    <div class="separator"></div>
+  </footer>
 </body>
+
 </html>
