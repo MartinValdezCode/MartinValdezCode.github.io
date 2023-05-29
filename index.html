@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio patitas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="../img/refugio-white.png" class="logo" alt="Refugio patitas"></a>
+        </div>
+        <button class="menu-abrir" id="abrir">
+            <div class="burger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </button>
+        <nav class="navbar" id="nav">
+            <ul class="navbar-links">
+                <button class="menu-cerrar" id="cerrar">
+                    <div class="burger-menu">
+                        x
+                    </div>
+                </button>
+                <li><a href="../paginas/pagina1.html" target="_blank">Sobre nosotros</a></li> 
+                <li><a href="../paginas/adopcion.html" target="_blank">En adopcion</a></li> 
+                <li><a href="../paginas/colaborar.html" target="_blank">Colaborar</a></li>
+                <li><a href="../paginas/contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider-container">
+        <!-- image slider start -->
+        <div class="slider">
+            <div class="slides">
+                <!-- radio buttons start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- radio buttons end -->
+                <!-- slide images start -->
+                <div class="slide first">
+                    <img src="./img/pexels-edgar-daniel-hernández-cervantes-3628100.jpg">
+                </div>
+                <div class="slide">
+                    <img src="./img/gatito4.jpg">
+                </div>
+                <div class="slide">
+                    <img src="./img/sobre-nosotros.jpg">
+                </div>
+                <!-- slide images end -->
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+        </div>
+    </div>
+    <!-- image slider end -->
+
+
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
